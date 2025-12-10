@@ -9,7 +9,9 @@ import {
   Settings,
   Building2,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  BedDouble,
+  FileText
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
@@ -18,8 +20,10 @@ const navItems = [
   { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/bookings', icon: CalendarCheck, label: 'Bookings' },
   { to: '/rooms', icon: DoorOpen, label: 'Rooms' },
+  { to: '/room-management', icon: BedDouble, label: 'Add Rooms' },
   { to: '/check-in', icon: LogIn, label: 'Check-In' },
   { to: '/check-out', icon: LogOut, label: 'Check-Out' },
+  { to: '/bill-generator', icon: FileText, label: 'Bill Generator' },
   { to: '/charges', icon: Receipt, label: 'Charges' },
   { to: '/admin', icon: Settings, label: 'Admin' },
 ];
